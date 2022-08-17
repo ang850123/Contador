@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//importaciones q escribimos
+/*importaciones q escribimos*/
 import 'src/app.dart';
 
 void main() {
