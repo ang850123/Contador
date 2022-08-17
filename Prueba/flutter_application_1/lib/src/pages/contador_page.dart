@@ -48,7 +48,9 @@ class _ContadorPageState extends State<ContadorPage> {
       children: [
         SizedBox(width: 30.0),
         FloatingActionButton(
-            child: Icon(Icons.exposure_zero), onPressed: _reset),
+            //Cuando se presenta el evento onPressed se invoca el método _reset
+            child: Icon(Icons.exposure_zero),
+            onPressed: _reset),
         Expanded(child: SizedBox()),
         FloatingActionButton(child: Icon(Icons.remove), onPressed: _sustraer),
         SizedBox(width: 15.0),
@@ -60,14 +62,17 @@ class _ContadorPageState extends State<ContadorPage> {
   }
 
   void _agregar() {
+    //Método privado agregar
     setState(() => _conteo++);
   }
 
   void _sustraer() {
+    //Método privado sustraer
     setState(() => _conteo--);
   }
 
   void _reset() {
+    //método privado reset
     setState(() => _conteo = 0);
   }
 }
